@@ -1,0 +1,99 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Profile | SagaWorks · Saglara Meyer</title><meta name="description" content="Career and leadership coaching by Saglara Meyer: leadership development, career transitions and organizational relationships."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"><style>*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--ink:#1a1612;--sand:#f5f0e8;--cream:#faf7f2;--gold:#b89a6a;--gold-light:#d4b88a;--mist:#8a8278;--accent:#6b4f3a;--border:rgba(184,154,106,0.25)}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);font-weight:300;line-height:1.7;overflow-x:hidden}
+a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem 2rem;padding:1.25rem 3rem;background:rgba(250,247,242,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:500;letter-spacing:.08em;color:var(--ink);text-decoration:none}
+.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:2rem;list-style:none;flex-wrap:wrap}
+.nav-links a{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mist);text-decoration:none;transition:color .2s}
+.nav-links a:hover,.nav-links a[aria-current]{color:var(--gold)}
+.hero{display:grid;grid-template-columns:1fr 200px;gap:5rem;align-items:center;padding:10rem 6rem 6rem}
+.hero-eyebrow,.section-label{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1.25rem}
+.hero-name{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,5.5vw,5.5rem);font-weight:300;line-height:1.05;letter-spacing:-.01em;margin-bottom:.4rem}
+.hero-name em,.section-heading em{font-style:italic;color:var(--gold)}
+.hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.1rem,2vw,1.6rem);font-weight:300;color:var(--mist);letter-spacing:.06em;margin-bottom:2rem}
+.hero-bio{font-size:.95rem;color:#4a4540;max-width:520px;line-height:1.85;margin-bottom:1.5rem}
+.proof{font-size:.8rem;letter-spacing:.06em;color:var(--mist);max-width:520px;margin-bottom:2.25rem}
+.hero-cta-group,.contact-btns{display:flex;gap:1rem;flex-wrap:wrap}
+.hero-text,.hero-photo{opacity:0;animation:fadeUp .8s .2s forwards}
+.hero-photo img{display:block;width:200px;height:250px;object-fit:cover;object-position:center 15%;border:1px solid var(--gold);padding:6px;background:var(--sand)}
+.hero-photo span{display:block;margin-top:.9rem;font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold)}
+.btn{display:inline-flex;align-items:center;padding:.85rem 2rem;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border:1px solid;transition:all .25s;cursor:pointer}
+.btn-primary{background:var(--ink);color:var(--cream);border-color:var(--ink)}
+.btn-primary:hover{background:var(--gold);border-color:var(--gold)}
+.btn-outline{background:transparent;color:var(--ink);border-color:var(--gold)}
+.btn-outline:hover{background:var(--gold);color:var(--cream)}
+.stats{background:var(--sand);padding:4rem 6rem;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem}
+.stat b{display:block;font-family:'Cormorant Garamond',serif;font-size:3.2rem;font-weight:300;color:var(--gold);line-height:1.1}
+.stat span{font-size:.85rem;color:var(--mist)}
+.specialties{padding:7rem 6rem}.specialties.alt{background:var(--sand)}
+.section-heading{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3.2rem);font-weight:300;line-height:1.2;margin-bottom:3rem;max-width:640px}
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5px;background:var(--border);border:1px solid var(--border)}
+.card{background:var(--cream);padding:2.5rem;transition:background .25s}.card:hover{background:#fff}
+.card-number{font-family:'Cormorant Garamond',serif;font-size:2.5rem;font-weight:300;color:var(--gold);opacity:.5;line-height:1;margin-bottom:1rem}
+.card-title{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:500;margin-bottom:.75rem}
+.card-desc{font-size:.88rem;color:var(--mist);line-height:1.75}
+.lead{font-size:.95rem;color:#4a4540;max-width:640px;line-height:1.85;margin:-1.5rem 0 2.5rem}
+.quote-wrap{padding:5rem 6rem;display:grid;gap:3rem;max-width:960px}
+.about-block{background:var(--sand);padding:3rem;position:relative}
+.about-block::before{content:'\201C';font-family:'Cormorant Garamond',serif;font-size:8rem;color:var(--gold);opacity:.2;position:absolute;top:-1rem;left:1.5rem;line-height:1}
+.about-quote{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:300;font-style:italic;line-height:1.6;position:relative}
+.about-attr{margin-top:1.25rem;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+.row{display:grid;grid-template-columns:200px 1fr;gap:2rem;padding:2rem 0;border-top:1px solid var(--border);max-width:860px}
+.row .when{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);padding-top:.35rem}
+.row p{font-size:.9rem;color:#4a4540;max-width:60ch}
+ul.plain{max-width:640px;padding-left:1.2rem;font-size:.93rem;color:#4a4540}ul.plain li{margin-bottom:.6rem}ul.plain li::marker{color:var(--gold)}
+.about-credentials{margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap}
+.cred{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--border);padding:.4rem .85rem}
+.note{font-size:.82rem;font-style:italic;color:var(--mist);margin-top:.5rem}
+.events-section{background:var(--ink);color:var(--cream);padding:6rem}
+.events-section .section-heading{color:var(--cream)}.events-section .section-label{color:var(--gold-light)}
+.events-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:rgba(184,154,106,.2);border:1px solid rgba(184,154,106,.2)}
+.event-card{background:#221f1b;padding:3rem;display:flex;flex-direction:column;align-items:flex-start}
+.event-card-badge{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mist);border:1px solid rgba(138,130,120,.4);padding:.3rem .75rem;margin-bottom:1.25rem}
+.event-card-badge.gold{color:var(--gold);border-color:var(--gold)}
+.event-card-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.4rem,2.2vw,1.9rem);font-weight:300;line-height:1.2;margin-bottom:1rem}
+.event-card-desc{font-size:.88rem;color:rgba(250,247,242,.65);line-height:1.85;margin-bottom:1.5rem}
+.event-item{border-left:2px solid var(--gold);padding-left:1.25rem;margin-bottom:1.5rem}
+.event-item-label{font-size:.65rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.event-item-value{font-family:'Cormorant Garamond',serif;font-size:1.05rem}
+.event-card .btn-outline{color:var(--cream);margin-top:auto}
+.contact{padding:7rem 6rem;text-align:center}.contact .section-heading{margin:0 auto 1.5rem}
+.contact-sub{font-size:.93rem;color:var(--mist);margin-bottom:2.5rem}
+.contact-email{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+.contact-email:hover{color:var(--gold)}.contact-btns{margin-top:2.5rem;justify-content:center}
+.page-head{padding:10rem 6rem 3rem}.page-head .section-heading{margin-bottom:1.5rem}
+footer{background:var(--sand);border-top:1px solid var(--border);padding:2rem 6rem;display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:space-between;font-size:.78rem;color:var(--mist)}
+footer a{color:var(--mist);text-decoration:none}footer a:hover{color:var(--gold)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@media(max-width:900px){nav{padding:1rem 1.5rem}.nav-links{gap:1.25rem}.hero{grid-template-columns:1fr;gap:2.5rem;padding:9rem 2rem 4rem}.hero-photo{order:-1}.hero-photo img{width:150px;height:190px}
+.stats,.specialties,.events-section,.contact,.page-head,.quote-wrap,footer{padding-left:2rem;padding-right:2rem}.stats{grid-template-columns:1fr 1fr}.events-grid,.row{grid-template-columns:1fr}.row{gap:.5rem}}
+@media(prefers-reduced-motion:reduce){.hero-text,.hero-photo{animation:none;opacity:1}html{scroll-behavior:auto}}
+.home{display:grid;grid-template-columns:minmax(240px,320px) 1fr;gap:6rem;align-items:center;min-height:84vh;padding:9rem 6rem 4rem}
+.home-photo,.home-text{opacity:0;animation:fadeUp .8s .2s forwards}
+.home-photo img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 15%}
+.home h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,5vw,4.4rem);font-weight:300;line-height:1.05;letter-spacing:-.01em;margin-bottom:.9rem}
+.home-sub{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:2rem}
+.home-name{font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:400;line-height:1.2}
+.home-proof{font-size:.82rem;letter-spacing:.04em;color:var(--mist);margin-bottom:2rem}
+.home-body{font-size:.98rem;color:#4a4540;max-width:560px;line-height:1.85;margin-bottom:1.25rem}
+.home .hero-cta-group{margin-top:2rem}
+.metrics{margin:0 6rem 5rem;padding-top:2.5rem;border-top:1px solid var(--border);display:grid;grid-template-columns:repeat(4,1fr);gap:2rem}
+@media(max-width:900px){.home{grid-template-columns:1fr;gap:2.5rem;padding:9rem 2rem 3rem;min-height:0}.home-photo img{width:200px}.metrics{margin:0 2rem 4rem;grid-template-columns:1fr 1fr}}
+@media(prefers-reduced-motion:reduce){.home-photo,.home-text{animation:none;opacity:1}}
+.events-grid .event-card:last-child:nth-child(odd){grid-column:1/-1}
+@media(max-width:900px){nav{position:relative}.nav-links{gap:.4rem 1.25rem}.home{padding-top:2.5rem}.page-head{padding-top:3rem}.hero{padding-top:3rem}}
+</style></head><body>
+<nav aria-label="Main"><a class="nav-logo" href="index.html">Saga<span>Works</span></a><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="coaching.html">Coaching</a></li><li><a href="profile.html" aria-current="page">Profile</a></li><li><a href="testimonials.html">Testimonials</a></li><li><a href="initiatives.html">Initiatives &amp; Speaking</a></li><li><a href="index.html#contact">Contact</a></li></ul></nav><main><section class="page-head"><p class="section-label">Profile</p><h1 class="section-heading">HR leader, coach<br>and <em>mentor</em></h1><p class="lead" style="margin-top:0">I am a People Operations and HR transformation leader in aerospace and manufacturing, and a UC Berkeley Executive Coaching Institute–trained coach. I partner with leaders on workforce strategy, organizational change and talent, and I coach on leadership, organizational relationships, career transitions and women's empowerment. I guide early-career HR professionals and people beginning a new chapter.</p></section>
+<section class="specialties alt"><p class="section-label">Career</p><h2 class="section-heading">Where I have <em>led</em></h2>
+<div class="row"><div class="when">2025 to present</div><div><h3 class="card-title">Senior HR Business Partner and HR Site Lead, Triumph Aerospace Systems</h3><p>Strategic HR and People Operations leader for 100+ employees across engineering, IT, manufacturing and R&amp;D. I coach 15+ leaders, cut vacancy rates by 33% through workforce redesign and technical talent pipelines, built 30/60/90 onboarding frameworks, and guided leaders through an ownership transition.</p></div></div>
+<div class="row"><div class="when">2023 to 2024</div><div><h3 class="card-title">HR Business Partner, Safran Electronics &amp; Defense</h3><p>Supported 220+ employees in a global aerospace and defense environment. Led workforce planning, talent calibration, compensation benchmarking and succession planning, tripled female engineering representation, and helped launch the Pacific Northwest chapter of Women@Safran North America.</p></div></div>
+<div class="row"><div class="when">2022</div><div><h3 class="card-title">Human Resources Specialist, Space Needle and Chihuly Garden &amp; Glass</h3><p>Recruited and onboarded 150+ employees in a fast-paced, high-volume environment while keeping the employee experience and compliance strong.</p></div></div>
+<div class="row"><div class="when">2011 to 2019</div><div><h3 class="card-title">HR Projects and Program Lead, Danish Ministry of Food, Agriculture &amp; Fisheries</h3><p>Led a team of five, ran workforce programs for up to 100 temporary employees a year, and built data quality and compliance frameworks across departments in Copenhagen.</p></div></div></section>
+<section class="specialties"><p class="section-label">Credentials &amp; Education</p><h2 class="section-heading">Training and <em>education</em></h2><div class="about-credentials" style="margin:0 0 2.5rem"><span class="cred">SPHR</span><span class="cred">SHRM-CP</span><span class="cred">Prosci</span><span class="cred">UC Berkeley ECI</span><span class="cred">Stanford LEAD</span><span class="cred">ICF Member</span></div>
+<ul class="plain"><li>MBA, University of Illinois Urbana-Champaign (in progress, expected 2028)</li><li>MS, Technology &amp; Socioeconomic Planning, Roskilde University, Denmark</li><li>Stanford LEAD Business Program, Stanford Graduate School of Business</li><li>Executive Coaching Certificate, UC Berkeley Executive Coaching Institute</li><li>SPHR, HRCI</li><li>SHRM-CP, HR Investigations Credential, People Manager Qualification and Talent Acquisition Credential, SHRM</li><li>Prosci Change Management Practitioner and Lean Six Sigma Training Certificate</li><li>Diversity &amp; Inclusion for Organizational Excellence Certificate, Stanford University</li><li>Human Resources Management Certificate, University of Washington</li><li>Project Management Certificate, Cornell University</li></ul></section>
+<section class="specialties alt"><p class="section-label">Leadership &amp; Community</p><h2 class="section-heading">Giving <em>back</em></h2><ul class="plain"><li>Chair, Mentorship Program, Lake Washington Human Resources Association</li><li>Panel Speaker, Lake Washington Human Resources Association</li><li>State Conference &amp; Operational Excellence Committee Advisor, Washington State SHRM</li><li>Professional Mentor, University of Washington</li><li>Career Development Advisor, Hopelink</li><li>Member, International Coaching Federation and SHRM</li></ul></section>
+<section class="contact" id="contact"><p class="section-label">Get in Touch</p><h2 class="section-heading" style="max-width:480px">Ready to take<br><em>your next step?</em></h2><p class="contact-sub">For speaking requests, coaching inquiries, and partnerships</p><a class="contact-email" href="mailto:info@sagameyer.com">info@sagameyer.com</a><div class="contact-btns"><a class="btn btn-primary" href="https://calendly.com/saglara/15min" target="_blank" rel="noopener">Book a 15-minute call</a><a class="btn btn-outline" href="https://www.linkedin.com/in/saglara/" target="_blank" rel="noopener">Connect on LinkedIn</a><a class="btn btn-outline" href="https://www.linkedin.com/company/sagamc/" target="_blank" rel="noopener">SagaWorks Company Page</a></div></section></main>
+<footer><span>&copy; 2026 SagaWorks · Saglara Meyer, SHRM-CP, SPHR</span><span><a href="mailto:info@sagameyer.com">info@sagameyer.com</a> · <a href="https://www.linkedin.com/in/saglara/" target="_blank" rel="noopener">LinkedIn</a></span></footer></body></html>
